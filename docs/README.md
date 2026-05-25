@@ -98,6 +98,7 @@ remotion/
 
 ```bash
 # 一键启动 Remotion Studio（自动安装依赖 + 启动开发服务器）
+# 注意：如果本地没有代理服务，请先编辑 script/start.sh 删除代理配置行
 bash script/start.sh
 
 # 生成 TTS 语音（需要配置 API Key）

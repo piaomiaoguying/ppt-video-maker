@@ -1,0 +1,5 @@
+mlx-whisper>=0.4.0
+openai-whisper>=20250601
+huggingface_hub>=1.0
+torch>=2.0
+opencc>=1.1

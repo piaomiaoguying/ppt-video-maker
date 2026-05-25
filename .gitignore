@@ -6,15 +6,6 @@ dist
 __pycache__/
 venv/
 
-*.mp3
-*.wav
-*.ogg
-*.flac
-*.aac
-*.m4a
-*.wma
-*.aiff
-*.opus
 script/config.py
 research/
 

@@ -26,10 +26,15 @@ const audioDurations = [
   41.60,   // 15_第15页 结尾
 ];
 
+// 每页动画时长（秒），-1 表示使用完整的音频时长
+const animationDurations = [
+  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+];
+
 export const slideConfigs: SlideConfig[] = audioDurations.map((duration, index) => ({
   audioFile: `audio/CC-Switch图片整流器/${String(index + 1).padStart(2, '0')}_第${index + 1}页.wav`,
   audioDuration: duration,
-  animationDuration: 5, // 动画固定5秒
+  animationDuration: animationDurations[index] === -1 ? duration : 5,
 }));
 
 // 计算每页的总帧数
